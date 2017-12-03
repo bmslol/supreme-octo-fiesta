@@ -1,9 +1,6 @@
 #include <iostream>
-
 using namespace std;
-
 int fibonacci(int numero);
-
 int main()
 {
     int numero=0, resultado=0;
