@@ -1,7 +1,6 @@
 #include<iostream>
 #include<string.h>
 using namespace std;
-
 int palindroma(char palabra[],int ini, int fin){
      if(ini >= fin)
           return 1;
