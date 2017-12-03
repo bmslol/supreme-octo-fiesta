@@ -12,15 +12,14 @@ int palindroma(char palabra[],int ini, int fin){
 int main( void ){
     char palabra[50];
     int tam,pal;
-
-    cout<<"Ingresa palabra o frase: ";
+    cout<<"Ingresa una palabra: ";
     cin.getline(palabra,50);
     tam=strlen(palabra);
     pal=palindroma(palabra,0,tam-1);
     if(pal==1)
-    	cout<<"\n La palabra o frase ES palindroma\n";
+    	cout<<"\n Es palindroma\n";
     else if(pal==0)
-    	cout<<"\n La palabra NO es Palindroma: \n";
+    	cout<<"\n No es Palindroma: \n";
 
     return 0;
 }
