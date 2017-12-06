@@ -1,20 +1,18 @@
 #include <iostream>
 #include <string.h>
-
 using namespace std;
-
 int buscar(char texto[],char cadena[]);
-
 int main()
 {
-    char cadena[20], texto[200]={"Los valores son las reglas de conducta y actitudes según las cuales nos comportarnos"};
+    char cadena[20], texto[200]={"La felicidad no es la ausencia de problemas; es la habilidad para tratar con ellos."};
     cout<<texto;
-    cout<<"Dame la palabra a buscar..: "; cin>>cadena;
+    cout<<"Que palabra quieres buscar:"; 
+    cin>>cadena;
     int posicion=buscar(texto,cadena);
     if (posicion==1)
-        cout<<"La palabra no se encontro en el texto";
+        cout<<"No se encontro la palabra";
     else
-        cout<<"La palabra comienza en la posicion..: "<<posicion;
+        cout<<"La palabra esta en la posicion: "<<posicion;
     return 0;
 }
 int buscar(char texto[], char cadena[])
