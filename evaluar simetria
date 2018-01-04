@@ -1,0 +1,30 @@
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+using namespace std;
+int main()
+{
+ int num[]={0};
+ int x,y,z,a;
+   cout<<"Programa que determina si un numero tiene simetria";
+   cout<<"Escribe el numero: ";
+   cin>>a;
+   num[a];
+   x=num[a];
+   x=x-1;
+ for(y=0,z=x;y<=x/2;y++,z--)
+    {
+        if(num[y]==num[z])
+        {
+            cout<<"1";
+        }
+        else
+        {
+            cout<<"0";
+        }
+    }
+
+
+ return 0;
+}
