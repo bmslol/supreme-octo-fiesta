@@ -9,7 +9,7 @@ cin>>a;
 
 numero[a];
 x=numero[a]-1;
-y = 0; x=x-1;
+y = 0; 
 
 while(y < x)
 {
