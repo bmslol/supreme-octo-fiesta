@@ -1,15 +1,15 @@
 #include <iostream>
+#include<string.h>
 using namespace std;
 int main()
 {
-int numero[30],a;
+char numero[80];
 int y=0,x=0, esSimetrico=1;
 cout<<"Escribe numero:";
-cin>>a;
+cin>>numero;
 
-numero[a];
-x=numero[a]-1;
-y = 0; 
+x=strlen(numero);
+y = 0; x=x-1;
 
 while(y < x)
 {
@@ -17,14 +17,13 @@ while(y < x)
     esSimetrico = 0;
 }
     if (esSimetrico)
-
     {
-        cout<<"1\n";
+        cout<<" 1 \n";
     }
 
     else
     {
-        cout<<"0\n";
+        cout<<" 0 \n";
     }
 }
 
