@@ -2,26 +2,29 @@
 using namespace std;
 int main()
 {
- int num[]={0};
- int x,y,z,a;
-   cout<<"Programa que determina si un numero tiene simetria";
-   cout<<"Escribe el numero: ";
-   cin>>a;
-   num[a];
-   x=num[a];
-   x=x-1;
- for(y=0,z=x;y<=x/2;y++,z--)
+int numero[30],a;
+int y=0,x=0, esSimetrico=1;
+cout<<"Escribe numero:";
+cin>>a;
+
+numero[a];
+x=numero[a]-1;
+y = 0; x=x-1;
+
+while(y < x)
+{
+    if(numero[y++]!=numero[x--])
+    esSimetrico = 0;
+}
+    if (esSimetrico)
+
     {
-        if(num[y]==num[z])
-        {
-            cout<<"1";
-        }
-        else
-        {
-            cout<<"0";
-        }
+        cout<<"1\n";
     }
 
-
- return 0;
+    else
+    {
+        cout<<"0\n";
+    }
 }
+
