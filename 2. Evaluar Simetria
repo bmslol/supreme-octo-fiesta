@@ -1,0 +1,34 @@
+#include <iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+int numero[80];
+int y=0,x=0, esSimetrico=1, tam;
+cout<<"Cuantos valores tendra el vector";
+cin>>tam;
+for(int i = 1; i <= tam; i++){
+cout<<"Escribe numero:";
+cin>>numero[i];
+}
+for(int j = 1; j <= tam; j++){
+x=numero[j];
+}
+
+y = 0; x=x-1;
+
+while(y < x)
+{
+    if(numero[y++]!=numero[x--])
+    esSimetrico = 0;
+}
+    if (esSimetrico)
+    {
+        cout<<" 1 ";
+    }
+
+    else
+    {
+        cout<<" 0 ";
+    }
+}
