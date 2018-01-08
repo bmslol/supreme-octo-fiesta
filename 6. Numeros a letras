@@ -1,0 +1,117 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main() {
+   int numero, n1, n2, n3, n4, n5;
+   cout<<"Escribe un numero de uno a 5 digitos: ";
+   cin>>numero;
+
+    n1 = (numero / 10000) % 10;
+    n2 = (numero / 1000) % 10;
+    n3 = (numero / 100) % 10;
+    n4 = (numero / 10) % 10;
+    n5 = (numero % 10);
+
+   if(numero >= 10000)
+    {
+      cout<<"El numero ingresado excede el rango de valores";
+    }
+   else
+    {
+      if(n1 == 1){
+         cout<<"UNO, ";
+      }else if(n1 == 2){
+         cout<<"DOS, ";
+      }else if(n1 == 3){
+         cout<<"TRES, ";
+      }else if(n1 == 4){
+         cout<<"CUATRO, ";
+      }else if(n1 == 5){
+         cout<<"CINCO, ";
+      }else if(n1 == 6){
+        cout<<"SEIS, ";
+      }else if(n1 == 7){
+         cout<<"SIETE, ";
+      }else if(n1 == 8){
+         cout<<"OCHO, ";
+      }else if(n1 == 9){
+         cout<<"NUEVE, ";
+      }
+      if(n2 == 1){
+         cout<<"UNO, ";
+      }else if(n2 == 2){
+         cout<<"DOS, ";
+      }else if(n2 == 3){
+         cout<<"TRES, ";
+      }else if(n2 == 4){
+         cout<<"CUATRO, ";
+      }else if(n2 == 5){
+         cout<<"CINCO, ";
+      }else if(n2 == 6){
+        cout<<"SEIS, ";
+      }else if(n2 == 7){
+         cout<<"SIETE, ";
+      }else if(n2 == 8){
+         cout<<"OCHO, ";
+      }else if(n2 == 9){
+         cout<<"NUEVE, ";
+      }
+      if(n3 == 1 ){
+         cout<<"UNO, ";
+      }else if(n3 == 2){
+         cout<<"DOS, ";
+      }else if(n3 == 3){
+         cout<<"TRES, ";
+      }else if(n3 == 4){
+         cout<<"CUATRO, ";
+      }else if(n3 == 5){
+         cout<<"CINCO, ";
+      }else if(n3 == 6){
+         cout<<"SEIS, ";
+      }else if(n3 == 7){
+         cout<<"SIETE, ";
+      }else if(n3 == 8){
+         cout<<"OCHO, ";
+      }else if(n3 == 9){
+         cout<<"NUEVE, ";
+      }
+      if(n4 == 1 ){
+        cout<<"UNO, ";
+      }else if(n4 == 2){
+         cout<<"DOS, ";
+      }else if(n4 == 3){
+         cout<<"TRES, ";
+      }else if(n4 == 4){
+         cout<<"CUATRO, ";
+      }else if(n4 == 5){
+         cout<<"CINCO, ";
+      }else if(n4 == 6){
+         cout<<"SEIS, ";
+      }else if(n4 == 7){
+         cout<<"SIETE, ";
+      }else if(n4 == 8){
+         cout<<"OCHO, ";
+      }else if(n4 == 9){
+         cout<<"NUEVE,1 ";
+      }
+      if(n5 == 1){
+         cout<<"UNO";
+      }else if(n5 == 2){
+         cout<<"DOS";
+      }else if(n5 == 3){
+         cout<<"TRES";
+      }else if(n5 == 4){
+         cout<<"CUATRO";
+      }else if(n5 == 5){
+         cout<<"CINCO";
+      }else if(n5 == 6){
+         cout<<"SEIS";
+      }else if(n5 == 7){
+         cout<<"SIETE";
+      }else if(n5 == 8){
+         cout<<"OCHO";
+      }else if(n5 == 9){
+         cout<<"NUEVE";
+      }
+   }
+}
