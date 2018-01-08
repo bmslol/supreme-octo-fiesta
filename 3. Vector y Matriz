@@ -1,0 +1,51 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <stdlib.h>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    int tamano[]={0};
+    int matriz[][1]={{0}};
+    int tam;
+    cout<<"Ingresa el tamaño del vector y la matriz"<<endl;
+    cin>>tam;
+    cout<<"Ingresa el contenido del vector"<<endl;
+    for(int i=0;i<tam;i++)
+    {
+        cin>>tamano[i];
+    }
+
+    cout<<"Ingresa los datos de los renglones(Matriz)"<<endl;
+
+    for (int r=0;r<tam;r++)
+    {
+        cin>>matriz[r][0];
+
+        if(matriz[r][0] == tamano[r])
+        {
+
+            matriz[r][1] = tamano[r];
+
+        }
+        else
+        {
+
+            matriz[r][1]=-1;
+
+        }
+    }
+
+        for (int r=0; r<tam; r++)
+        {
+            for (int c=0; c<2; c++)
+            {
+                cout<< matriz[r][c]<<"\t";
+            }
+        cout<<endl;
+    }
+
+    return 0;
+}
